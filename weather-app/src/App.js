@@ -3,6 +3,7 @@ import React from 'react';
 import background from "./home-background.png"
 import 'materialize-css';
 import 'materialize-css/dist/css/materialize.min.css';
+import icon from "./sun-icon.png";
 import WbSunnyOutlinedIcon from '@material-ui/icons/WbSunnyOutlined';
 import { Button, Card, Row, Col } from 'react-materialize';
 // import render from 'react-dom';
@@ -12,14 +13,12 @@ function App() {
   // source: https://reactgo.com/react-get-current-date/
   const today = new Date()
   const currDate = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
-
   //source for image: https://reactgo.com/react-background-image/
   return (
     <div className="App">
       <header className="App-header">
         <div class = "row">
-          <div class = "col s1"> <WbSunnyOutlinedIcon></WbSunnyOutlinedIcon> </div>
-          <div class = "col s4 offset-s3"> <h6> The Weather App</h6> </div>
+          <div class = "col s4 offset-s4"> <h6> The Weather App</h6> </div>
         </div>
       </header>
 
@@ -27,21 +26,22 @@ function App() {
         <div styles = {{ backgroundImage : `url(${background})` }}>
         <div class = "App-daily-view"> 
           <div class = "row">
-            <div class="col s6">
-                <h4> Pittsburgh, PA </h4>
-                <h2> { currDate } </h2>
+            <div class= "col s6">
+                <h3> Welcome to the Weather App! </h3>
+                <h5> Here, you can learn about the daily and weekly weather in Pittsburgh, PA. </h5>
+                <br/>
+                <h5> Today is Sunny, 56F </h5>
             </div>
 
             <div class = "col s6">
-              <h4> Today is Sunny </h4>
-              <h2> 56F </h2>
+              <br/>
+              <img src = {icon} alt = "sun icon"/>
             </div>
           </div>
         </div>
 
         <div class = "App-weekly-view">
-          <h4> Weekly Weather Forecast </h4>
-          <table class = "App-table">
+          <table id = "App-table" class = "centered">
             <tr>
               <th> Monday </th>
               <th> Tuesday </th>

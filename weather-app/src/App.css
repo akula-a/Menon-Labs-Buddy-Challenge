@@ -1,38 +1,39 @@
 .App-header {
-  background-color: #4281A4;
-  min-height: 10vh;
+  background-image: url("./3c-gradient-background.png");
+  background-size:100%;
+  min-height: 7vh;
   text-align: center;
   color: white;
 }
 
 .App-daily-view {
-  background-image: url("./home-background.png");
+  background-image: url("./3c-gradient-background.png");
+  background-size:100%;
   width:100%;
-  min-height: 30vh;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
-  grid-gap: 16px;
+  height:100%;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: white;  
+  min-height: 40vh;
+  text-align: center;
 }
 
 .App-weekly-view{
-  background-color: #4281A4;
-  min-height: 30vh;
-  display: grid;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-table {
-  text-align:center;
+  text-align: center;
   margin-left:auto;
   margin-right:auto;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top:5%;
+  font-size: calc(10px + 2vmin);
 }
 
-WbSunnyOutlinedIcon{
-  size: 100px;
+#App-table {
+  background-image: white;
+  color: black;
+  border: 1px solid;
+  box-shadow: 5px 10px #6A8D92  ;
 }
+
 
 
 
