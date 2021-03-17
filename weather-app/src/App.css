@@ -1,15 +1,11 @@
-.App {
-  text-align: center;
-}
-
 .App-header {
   background-color: #4281A4;
   min-height: 10vh;
-  display: flex;
+  text-align: center;
   color: white;
 }
 
-.App-body {
+.App-daily-view {
   background-image: url("./home-background.png");
   width:100%;
   min-height: 30vh;
@@ -20,10 +16,23 @@
   color: white;
 }
 
+.App-weekly-view{
+  background-color: #4281A4;
+  min-height: 30vh;
+  display: grid;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 .App-table {
   text-align:center;
-  margin-left:100px;
-  margin-right:100px;
+  margin-left:auto;
+  margin-right:auto;
 }
+
+WbSunnyOutlinedIcon{
+  size: 100px;
+}
+
 
 
