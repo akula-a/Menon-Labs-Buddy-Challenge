@@ -3,17 +3,27 @@
 }
 
 .App-header {
-  background-color: #327daf;
-  min-height: 100vh;
+  background-color: #4281A4;
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  color: white;
+}
+
+.App-body {
+  background-image: url("./home-background.png");
+  width:100%;
+  min-height: 30vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+  grid-gap: 16px;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-table {
+  text-align:center;
+  margin-left:100px;
+  margin-right:100px;
 }
+
 
